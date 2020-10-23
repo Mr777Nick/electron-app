@@ -1,0 +1,4 @@
+appId: com.example.weemaraditya
+publish:
+  provider: github
+  token: 5726e6411d2ab5dbcc693f1dfe3cec3622c5c40a

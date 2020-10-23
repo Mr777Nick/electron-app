@@ -1,0 +1,66 @@
+{
+    "name": "weemaraditya",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "./",
+    "main": "public/electron.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/elfaza/electron-app.git"
+    },
+    "build": {
+        "mac": {
+            "icon": "build/icons/icon.icns",
+            "target": "pkg"
+        },
+        "appId": "com.example.weemaraditya",
+        "files": [
+            "build/**/*",
+            "node_modules/**/*"
+        ],
+        "directories": {
+            "buildResources": "assets"
+        }
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "deploy": "react-scripts build && scp -r ./build/* root@157.230.245.121:/var/www/akademisantri.com/build",
+        "deploy-dev": "react-scripts build && scp -r ./build/* root@157.230.245.121:/var/www/dev.weemaraditya.com/build",
+        "electron": "electron .",
+        "electron-build": "electron-builder build --win --publish never",
+        "electron-deploy": "electron-builder build --win --publish always"
+    },
+    "dependencies": {
+        "@material-ui/core": "^4.10.2",
+        "@material-ui/icons": "^4.9.1",
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.3.2",
+        "@testing-library/user-event": "^7.1.2",
+        "electron-updater": "^4.3.5",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-scripts": "^3.4.4"
+    },
+    "devDependencies": {
+        "electron": "^10.1.4",
+        "electron-builder": "^22.9.1"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

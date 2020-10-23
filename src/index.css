@@ -1,0 +1,151 @@
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#root, .App {
+    height: 100%;
+}
+
+.custom-contact-me-btn {
+  color: rgb(255, 255, 255);
+  height: 60px;
+  color: white;
+}
+
+.custom-contact-me-btn:hover {
+  background-color: #2857A4;
+  color: white;
+}
+
+
+.coming-soon-contact-me-icon {
+  border-radius: 100%;
+  border: 3px white solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin-left: -10px;
+  margin-right: 10px;
+}
+
+.coming-soon-contact-me-icon svg {
+  font-size: 30px;
+}
+
+#fullscreen-bg-video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text-primary {
+    color: #00A3E9!important;
+}
+
+.text-black {
+    color: #303030!important;
+}
+
+.mp-section-title h1::before, .mp-section-title h1::after {
+    background-color: #00A3E9;
+}
+
+.header-logo {
+    color: #ffffff;
+}
+
+.cr-header-section.stick {
+    background-color: #ffffff;
+}
+
+.cr-menu-section {
+    background: rgba(0,0,0,0.95);
+}
+
+.cr-menu ul li a:hover, .cr-menu ul li.active a {
+    color: #00A3E9;
+}
+
+.menu-toggle,
+.menu-toggle .ion-android-menu {
+    transition: 0s;
+}
+
+.mp-about-section {
+    box-shadow: 0 10px 24px rgba(19, 194, 254, 0.1);
+}
+
+.co3-feature-project-section {
+    /* background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 17%, rgba(0,42,60,1) 75%); */
+}
+
+.co3-feature-project-content {
+    margin-top: 0px;
+}
+
+.cr-about-video a.video-popup i {
+    font-size: 45px;
+    color: #ffffff;
+}
+
+.cr-about-video a.video-popup i:hover {
+    font-size: 45px;
+    color: #00A3E9;
+}
+
+.cr-footer {
+    border-top: none;
+}
+
+.cr-footer-copyright p  {
+    color: #303030
+}
+.cr-footer-copyright p a:hover {
+    color: #00A3E9
+}
+
+.cr-footer-menu ul li a {
+    color: #303030
+}
+.cr-footer-menu ul li a:hover {
+    color: #00A3E9
+}
+
+#scrollUp {
+    color: #00A3E9;
+    border: 2px solid #00A3E9;
+}
+
+#scrollUp:hover {
+    background-color: #00A3E9;
+}
+
+.btn-hover-cr:hover {
+    background-color: #00A3E9;
+    border-color: #00A3E9;
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #00A3E9;
+    border-color: #00A3E9;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #0D73B8;
+    border-color: #0D73B8;
+}
+
+
+/* .overlay1::before {
+    background: rgb(40,87,164);
+    background: linear-gradient(90deg, rgba(40,87,164,1) 48%, rgba(13,115,184,1) 62%, rgba(0,163,233,1) 100%);
+    opacity: 0.5;
+} */
